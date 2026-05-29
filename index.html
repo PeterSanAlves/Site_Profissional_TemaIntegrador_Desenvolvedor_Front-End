@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gestão de Carreiras: guia completo sobre a profissão de Desenvolvedor Front-End — mercado, salários, tendências e ODS 9." />
+  <title>Carreira Front-End | Gestão de Carreiras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVEGAÇÃO FIXA
+  ============================================================ -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a href="#hero" class="nav-logo" aria-label="Ir para o topo">
+        <span class="logo-bracket" aria-hidden="true">&lt;</span><span class="logo-slash" aria-hidden="true">/</span><span class="logo-bracket" aria-hidden="true">&gt;</span>
+        <span class="logo-text">CarreiraFE</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#sobre"   class="nav-link">Sobre</a></li>
+        <li><a href="#mercado" class="nav-link">Mercado</a></li>
+        <li><a href="#ods"     class="nav-link">ODS 9</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Abrir menu de navegação"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         SEÇÃO 1 — HERO
+    ============================================================ -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow--a" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow--b" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow--c" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+
+        <div class="hero-content reveal">
+          <span class="hero-badge">Gestão de Carreiras</span>
+          <h1 class="hero-title" id="hero-title">
+            Desenvolvedor Front-End:<br />
+            <span class="text-accent">Construindo a Web</span><br />
+            do Futuro
+          </h1>
+          <p class="hero-subtitle">
+            Com o avanço contínuo das plataformas digitais, praticamente qualquer negócio atual
+            depende de um site ou aplicativo de alto desempenho. O desenvolvedor front-end é o
+            profissional mais procurado pelas organizações para liderar essa digitalização.
+          </p>
+          <a href="#sobre" class="btn btn-primary" aria-label="Explorar a profissão de Desenvolvedor Front-End">
+            Explorar a Profissão
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <polyline points="6,9 12,15 18,9"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="hero-visual reveal reveal--right" aria-hidden="true">
+          <div class="code-card" id="codeCard">
+            <div class="code-dots">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+            </div>
+            <pre class="code-pre"><code id="codeOutput"><span class="tw-cursor"></span></code></pre>
+          </div>
+          <script type="text/template" id="codeSegments">
+[{"c":"tag","t":"&lt;section"},{"c":"","t":" "},{"c":"attr","t":"class="},{"c":"str","t":"\"future\""},{"c":"tag","t":"&gt;"},
+{"c":"","t":"\n\n  "},
+{"c":"tag","t":"&lt;h1&gt;"},{"c":"text","t":"Hello, World!"},{"c":"tag","t":"&lt;/h1&gt;"},
+{"c":"","t":"\n\n  "},
+{"c":"tag","t":"&lt;p"},{"c":"","t":" "},{"c":"attr","t":"style="},{"c":"str","t":"\""},
+{"c":"","t":"\n    color: #F59E0B;"},
+{"c":"","t":"\n    font-weight: 700;"},
+{"c":"","t":"\n  "},{"c":"str","t":"\""},{"c":"tag","t":"&gt;"},
+{"c":"","t":"\n    "},
+{"c":"text","t":"Build."},{"c":"","t":"\n    "},{"c":"text","t":"Create."},{"c":"","t":"\n    "},{"c":"text","t":"Inspire."},
+{"c":"","t":"\n  "},
+{"c":"tag","t":"&lt;/p&gt;"},
+{"c":"","t":"\n\n"},
+{"c":"tag","t":"&lt;/section&gt;"}
+          ]</script>
+          <div class="hero-stats">
+            <div class="stat-pill">
+              <span class="stat-num">3+</span>
+              <span class="stat-lbl">Tecnologias Core</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-num">11% a 15%</span>
+              <span class="stat-lbl">das vagas no mercado</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#sobre" class="scroll-hint" aria-label="Rolar para a próxima seção">
+        <span class="scroll-hint-dot"></span>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         SEÇÃO 2 — SOBRE A PROFISSÃO
+    ============================================================ -->
+    <section class="section" id="sobre" aria-labelledby="sobre-title">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="section-tag">Sobre a Profissão</span>
+          <h2 class="section-title" id="sobre-title">
+            O que faz um<br />
+            <span class="text-accent">Desenvolvedor Front-End?</span>
+          </h2>
+        </div>
+
+        <div class="intro-block reveal">
+          <p>
+            O Desenvolvedor Front-End é o profissional responsável pela parte <strong>Cliente</strong>
+            de uma aplicação. Ele cuida de tudo aquilo que o usuário vê e interage no navegador. Fazendo uma analogia:
+            se o arquiteto planeja a estrutura de uma casa e o engenheiro garante a solidez (Back-End), o
+            <strong>Front-End é responsável pelo acabamento, pela decoração e por toda a parte funcional
+            interna</strong>. A principal função é converter layouts de UI/UX em código interativo
+            e funcional. Suas <strong>principais Linguagens</strong> são:
+          </p>
+        </div>
+
+        <!-- Tríade da Web -->
+        <h3 class="subsection-title reveal">Principais Linguagens</h3>
+        <div class="triade-grid">
+
+          <div class="triade-card reveal" data-delay="0">
+            <div class="triade-card-top">
+              <div class="triade-icon triade-icon--html" aria-hidden="true">
+                <svg height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+            	 viewBox="0 0 511.997 511.997" xml:space="preserve">
+            <path style="fill:#DD512A;" d="M38.238,0c-4.706,0-8.212,3.835-7.794,8.521l39.671,444.978c0.418,4.687,4.468,9.552,9.004,10.811
+            	l168.344,46.742c4.535,1.259,11.954,1.259,16.49,0.003l168.856-46.819c4.535-1.258,8.59-6.122,9.007-10.808L481.553,8.521
+            	C481.974,3.835,478.464,0,473.758,0H38.238z M397.068,102.054c-0.375,4.18-1.023,11.437-1.441,16.124l-1.045,11.675
+            	c-0.421,4.685-1.02,11.386-1.336,14.889c-0.315,3.504-0.614,6.371-0.669,6.371c-0.053,0-3.948,0-8.653,0H264.554
+            	c-4.706,0-8.595,0-8.646,0s-3.944,0-8.65,0H184.39c-4.706,0-8.212,3.835-7.794,8.521l3.667,40.99
+            	c0.418,4.685,4.612,8.521,9.317,8.521h57.679c4.706,0,8.598,0,8.65,0s3.941,0,8.646,0h99.142c4.706,0,11.988,0,16.182,0
+            	c4.191,0,7.312,3.421,6.932,7.601c-0.382,4.18-1.034,11.439-1.451,16.124L373.569,365.02c-0.421,4.687-0.953,10.674-1.182,13.306
+            	c-0.234,2.63-4.134,5.811-8.669,7.069l-99.474,27.582c-4.535,1.256-8.302,2.296-8.373,2.312c-0.07,0.015-3.836-1.003-8.373-2.26
+            	l-99.58-27.632c-4.535-1.258-8.587-6.122-9.004-10.809l-6.41-71.945c-0.418-4.687,3.092-8.522,7.798-8.522h9.088
+            	c4.706,0,12.406,0,17.111,0h13.552c4.706,0,8.896,3.835,9.317,8.522l2.514,28.164c0.418,4.687,4.475,9.524,9.019,10.751
+            	l46.579,12.579c4.541,1.227,8.275,2.231,8.296,2.231c0.021,0,3.753-1.006,8.296-2.233l46.663-12.609
+            	c4.541-1.227,8.602-6.066,9.023-10.751l5.06-56.427c0.421-4.687-3.085-8.522-7.791-8.522h-52.474c-4.706,0-8.595,0-8.646,0
+            	s-3.944,0-8.65,0H137.765c-4.706,0-8.896-3.836-9.314-8.521l-12.416-139.126c-0.418-4.687-1.066-11.942-1.441-16.124
+            	c-0.371-4.18,3.172-7.601,7.878-7.601h124.787c4.706,0,8.598,0,8.65,0s3.941,0,8.646,0h124.636
+            	C393.896,94.452,397.441,97.872,397.068,102.054z"/>
+            </svg>
+              </div>
+              <span class="triade-label">HTML5</span>
+            </div>
+            <h4>Estrutura</h4>
+            <p>A linguagem de marcação que <strong>organiza e dá significado semântico</strong> ao conteúdo da página, definindo a Estrutura, hierarquia e acessibilidade. <strong>Versão Atual: HTML Living Standard.</strong></p>
+            <span class="triade-chip">Marcação</span>
+          </div>
+
+          <div class="triade-card reveal" data-delay="100">
+            <div class="triade-card-top">
+              <div class="triade-icon triade-icon--css" aria-hidden="true">
+                <svg height="800px" width="800px" xmlns="http://www.w3.org/2000/svg"
+aria-label="CSS3" role="img"
+viewBox="0 0 512 512"><path fill="#264de4"
+d="M72 460L30 0h451l-41 460-184 52"/><path fill="#2965f1"
+d="M256 37V472l149-41 35-394"/><path fill="#ebebeb"
+d="m114 94h142v56H119m5 58h132v57H129m3 28h56l4 45 64 17v59L139 382"/><path fill="#ffffff"
+d="m256 208v57h69l-7 73-62 17v59l115-32 26-288H256v56h80l-5.5 58Z"/></svg>
+              </div>
+              <span class="triade-label">CSS3</span>
+            </div>
+            <h4>Estilo</h4>
+            <p>A linguagem de estilo que <strong>personaliza layouts, cores, fontes e animações</strong>, transformando estrutura em experiência visual. <strong>Versão atual: CSS3.</strong></p>
+            <span class="triade-chip">Apresentação</span>
+          </div>
+
+          <div class="triade-card reveal" data-delay="200">
+            <div class="triade-card-top">
+              <div class="triade-icon triade-icon--js" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg"
+aria-label="JavaScript" role="img"
+viewBox="0 0 512 512"><rect
+width="512" height="512"
+rx="15%"
+fill="#f7df1e"/><path d="M324 370c10 17 24 29 47 29c20 0 33-10 33 -24c0-16 -13 -22 -35 -32l-12-5c-35-15 -58 -33 -58 -72c0-36 27 -64 70 -64c31 0 53 11 68 39l-37 24c-8-15 -17 -21 -31 -21c-14 0-23 9 -23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76c0 43-34 67 -80 67c-45 0-74 -21 -88 -49zm-170 4c8 13 14 25 31 25c16 0 26-6 26 -30V203h48v164c0 50-29 72 -72 72c-39 0-61 -20 -72 -44z"/></svg>
+              </div>
+              <span class="triade-label">JavaScript</span>
+            </div>
+            <h4>Interatividade</h4>
+            <p>A linguagem que <strong>adiciona vida, lógica e animações em tempo real</strong>, tornando a experiência dinâmica e responsiva ao usuário. <strong>Versão atual: ES2026.</strong></p>
+            <span class="triade-chip">Comportamento</span>
+          </div>
+
+        </div>
+
+        <!-- Ecossistema -->
+        <h3 class="subsection-title reveal">Ecossistema e Ferramentas</h3>
+        <div class="ecosystem-grid">
+
+          <div class="eco-item reveal" data-delay="0">
+            <div class="eco-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="2"/><circle cx="12" cy="12" r="8"/><line x1="12" y1="4" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="20"/>
+              </svg>
+            </div>
+            <div class="eco-body">
+              <h5>Frameworks &amp; Bibliotecas</h5>
+              <p>React, Vue.js e Angular dominam o mercado e são exigidos em grande parte das vagas sênior.</p>
+            </div>
+          </div>
+
+          <div class="eco-item reveal" data-delay="100">
+            <div class="eco-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14,2 14,8 20,8"/>
+                <line x1="10" y1="13" x2="14" y2="13"/>
+              </svg>
+            </div>
+            <div class="eco-body">
+              <h5>TypeScript</h5>
+              <p>Tipagem estática que previne erros em runtime e melhora a manutenibilidade de grandes projetos.</p>
+            </div>
+          </div>
+
+          <div class="eco-item reveal" data-delay="200">
+            <div class="eco-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/>
+                <path d="M6 9v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V9"/>
+                <line x1="12" y1="12" x2="12" y2="15"/>
+              </svg>
+            </div>
+            <div class="eco-body">
+              <h5>Git &amp; GitHub</h5>
+              <p>Controle de versionamento indispensável para trabalho em equipe e gestão de código-fonte.</p>
+            </div>
+          </div>
+
+          <div class="eco-item reveal" data-delay="300">
+            <div class="eco-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                <path d="M2 2l7.586 7.586"/>
+                <circle cx="11" cy="11" r="2"/>
+              </svg>
+            </div>
+            <div class="eco-body">
+              <h5>Figma &amp; UI/UX</h5>
+              <p>Leitura de protótipos de design para converter layouts em interfaces funcionais e fiéis à visão do designer.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SEÇÃO 3 — MERCADO, DICAS E TENDÊNCIAS
+    ============================================================ -->
+    <section class="section section--alt" id="mercado" aria-labelledby="mercado-title">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="section-tag">Mercado de Trabalho</span>
+          <h2 class="section-title" id="mercado-title">
+            Salários, Qualificações, Desafios<br />
+            <span class="text-accent">e Tendências</span>
+          </h2>
+        </div>
+
+        <!-- Remuneração -->
+        <div class="salary-card reveal">
+          <div class="salary-item">
+            <span class="salary-range-label">Júnior / Pleno</span>
+            <span class="salary-value">R$ 2.000 — R$ 9.400</span>
+            <span class="salary-sub">Mercado nacional</span>
+          </div>
+          <div class="salary-divider" aria-hidden="true"></div>
+          <div class="salary-item salary-item--featured">
+            <span class="salary-range-label">Sênior / Internacional</span>
+            <span class="salary-value salary-value--big">R$ 15.000+</span>
+            <span class="salary-sub">Vagas remotas globais</span>
+          </div>
+          <div class="salary-divider" aria-hidden="true"></div>
+          <div class="salary-item">
+            <span class="salary-range-label">Principais Contratantes</span>
+            <div class="employers-list" aria-label="Empresas que mais contratam desenvolvedores front-end">
+              <span class="employer-badge">Google</span>
+              <span class="employer-badge">Amazon</span>
+              <span class="employer-badge">Nubank</span>
+              <span class="employer-badge">Itaú</span>
+              <span class="employer-badge">Mercado Livre</span>
+              <span class="employer-badge">Globo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <h3 class="subsection-title reveal">Qualificações Exigidas</h3>
+        <div class="skills-grid">
+
+          <div class="skills-card reveal" data-delay="0">
+            <div class="skills-card-header">
+              <div class="skills-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/>
+                </svg>
+              </div>
+              <h4>Hard Skills</h4>
+            </div>
+            <ul class="skills-list" role="list">
+              <li><span class="skill-arrow" aria-hidden="true">&#9657;</span> Domínio da Tríade (HTML, CSS, JS)</li>
+              <li><span class="skill-arrow" aria-hidden="true">&#9657;</span> Responsividade e design Mobile-First</li>
+              <li><span class="skill-arrow" aria-hidden="true">&#9657;</span> Acessibilidade Web (WCAG 2.1)</li>
+              <li><span class="skill-arrow" aria-hidden="true">&#9657;</span> Integração e consumo de APIs RESTful</li>
+              <li><span class="skill-arrow" aria-hidden="true">&#9657;</span> Performance e Core Web Vitals</li>
+            </ul>
+          </div>
+
+          <div class="skills-card reveal" data-delay="150">
+            <div class="skills-card-header">
+              <div class="skills-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <h4>Soft Skills</h4>
+            </div>
+            <ul class="skills-list" role="list">
+              <li><span class="skill-arrow" aria-hidden="true">&#9657;</span> Comunicação clara e objetiva</li>
+              <li><span class="skill-arrow" aria-hidden="true">&#9657;</span> Proatividade e autonomia</li>
+              <li><span class="skill-arrow" aria-hidden="true">&#9657;</span> Empatia com o usuário final</li>
+              <li><span class="skill-arrow" aria-hidden="true">&#9657;</span> Trabalho em equipe e colaboração</li>
+              <li><span class="skill-arrow" aria-hidden="true">&#9657;</span> Pensamento crítico e resolução de problemas</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Desafios -->
+        <h3 class="subsection-title reveal">Desafios do Desenvolvedor Front-End</h3>
+        <div class="challenges-grid">
+
+          <div class="challenge-card reveal" data-delay="0">
+            <div class="challenge-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/>
+              </svg>
+            </div>
+            <h4>Constante Atualização</h4>
+            <p>A tecnologia web evolui muito rápido. O maior desafio é não se perder nas novidades e focar em manter uma base sólida em <strong>HTML, CSS e JavaScript</strong>.</p>
+          </div>
+
+          <div class="challenge-card reveal" data-delay="100">
+            <div class="challenge-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5"/>
+                <path d="M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h4>Múltiplas Responsabilidades</h4>
+            <p>O trabalho vai muito além do visual. Hoje, é obrigatório criar sites <strong>super-rápidos, responsivos (mobile-first), acessíveis a todos</strong> e otimizados para motores de busca (SEO).</p>
+          </div>
+
+          <div class="challenge-card reveal" data-delay="200">
+            <div class="challenge-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 2v4m0 12v4M2 12h4m12 0h4"/>
+                <path d="M4.93 4.93l2.12 2.12m9.9 9.9l2.12 2.12M19.07 4.93l-2.12 2.12m-9.9 9.9l-2.12 2.12"/>
+              </svg>
+            </div>
+            <h4>Integração de Sistemas</h4>
+            <p>A interface precisa se comunicar perfeitamente com os servidores (Back-End). Isso exige muito domínio em <strong>consumo de APIs e gestão de dados em tempo real</strong>.</p>
+          </div>
+
+        </div>
+
+        <!-- Certificações -->
+        <h3 class="subsection-title reveal">Certificações de Peso</h3>
+        <div class="certs-grid">
+
+          <div class="cert-card reveal" data-delay="0">
+            <div class="cert-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="8" r="6"/>
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+              </svg>
+            </div>
+            <span class="cert-org">Meta</span>
+            <span class="cert-name">Front-End Developer</span>
+          </div>
+
+          <div class="cert-card reveal" data-delay="100">
+            <div class="cert-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <span class="cert-org">W3C</span>
+            <span class="cert-name">Web Developer</span>
+          </div>
+
+          <div class="cert-card reveal" data-delay="200">
+            <div class="cert-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+            <span class="cert-org">Google</span>
+            <span class="cert-name">UX Design Certificate</span>
+          </div>
+
+        </div>
+
+        <!-- Tendências: Accordions -->
+        <h3 class="subsection-title reveal">Tendências para os Próximos Anos</h3>
+        <div class="accordion-group reveal" role="list">
+
+          <div class="accordion-item" role="listitem">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="acc-ai" id="btn-acc-ai">
+              <span class="acc-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <rect x="2" y="3" width="20" height="14" rx="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </span>
+              <span class="acc-title">Inteligência Artificial no Desenvolvimento</span>
+              <span class="acc-chevron" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6,9 12,15 18,9"/></svg>
+              </span>
+            </button>
+            <div class="accordion-content" id="acc-ai" role="region" aria-labelledby="btn-acc-ai">
+              <p>O uso de ferramentas como <strong>GitHub Copilot e Cursor</strong> está transformando o papel do desenvolvedor: de "digitador de código" para <strong>"arquiteto de soluções"</strong>. A IA acelera tarefas repetitivas, exigindo que o profissional foque em lógica, arquitetura e tomada de decisões estratégicas — tornando o raciocínio crítico a habilidade mais valiosa da próxima década.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item" role="listitem">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="acc-fullstack" id="btn-acc-fullstack">
+              <span class="acc-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <polyline points="16,18 22,12 16,6"/>
+                  <polyline points="8,6 2,12 8,18"/>
+                </svg>
+              </span>
+              <span class="acc-title">O Fim da Barreira Front/Back</span>
+              <span class="acc-chevron" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6,9 12,15 18,9"/></svg>
+              </span>
+            </button>
+            <div class="accordion-content" id="acc-fullstack" role="region" aria-labelledby="btn-acc-fullstack">
+              <p>Meta-frameworks como <strong>Next.js, Nuxt e Remix</strong> integram lógica de servidor e cliente em um único projeto. O conceito de <strong>Edge Computing</strong> coloca o processamento mais próximo do usuário, reduzindo latência e borrando as fronteiras tradicionais — criando profissionais mais versáteis e completos no mercado global.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item" role="listitem">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="acc-vitals" id="btn-acc-vitals">
+              <span class="acc-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>
+                </svg>
+              </span>
+              <span class="acc-title">Core Web Vitals e Acessibilidade</span>
+              <span class="acc-chevron" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6,9 12,15 18,9"/></svg>
+              </span>
+            </button>
+            <div class="accordion-content" id="acc-vitals" role="region" aria-labelledby="btn-acc-vitals">
+              <p>Os critérios de ranqueamento dos motores de busca tornaram-se mais rigorosos, com a introdução da métrica INP (Interaction to Next Paint) para exigir <strong>tempo de resposta instantâneo nas páginas</strong>. Paralelamente, a conformidade com as diretrizes de acessibilidade (WCAG) consolidou-se como um requisito técnico e jurídico. Entregar plataformas rápidas e totalmente inclusivas é agora uma exigência inegociável.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item" role="listitem">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="acc-wasm" id="btn-acc-wasm">
+              <span class="acc-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/>
+                </svg>
+              </span>
+              <span class="acc-title">WebAssembly (Wasm)</span>
+              <span class="acc-chevron" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6,9 12,15 18,9"/></svg>
+              </span>
+            </button>
+            <div class="accordion-content" id="acc-wasm" role="region" aria-labelledby="btn-acc-wasm">
+              <p>O WebAssembly permite <strong>rodar softwares de alta performance diretamente no navegador</strong>, quebrando os limites históricos do JavaScript. Aplicações de edição de vídeo, jogos 3D, simulações científicas e ferramentas de design pesado estão migrando para a web, com performance próxima à nativa.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SEÇÃO 4 — ODS 9
+    ============================================================ -->
+    <section class="section section--ods" id="ods" aria-labelledby="ods-title">
+      <div class="container">
+        <div class="ods-layout">
+
+          <div class="ods-badge-col reveal" aria-hidden="true">
+            <div class="ods-badge-ring">
+              <div class="ods-badge-inner">
+                <span class="ods-num">9</span>
+                <span class="ods-lbl">ODS</span>
+              </div>
+            </div>
+            <div class="ods-icons-row">
+              <span class="ods-mini" title="Indústria">🏭</span>
+              <span class="ods-mini" title="Inovação">💡</span>
+              <span class="ods-mini" title="Infraestrutura">🌐</span>
+            </div>
+          </div>
+
+          <div class="ods-content reveal reveal--right">
+            <div class="section-header section-header--left">
+              <span class="section-tag section-tag--light">ONU · Agenda 2030</span>
+              <h2 class="section-title section-title--light" id="ods-title">
+                O Papel do Front-End no
+                <span class="text-accent">ODS 9</span>
+              </h2>
+            </div>
+            <p class="ods-sub-heading">Indústria, Inovação e Infraestrutura</p>
+            <p class="ods-body">
+              O <strong>ODS 9</strong> faz parte da Agenda 2030, um plano de ação global
+              estabelecido pela Organização das Nações Unidas (ONU) em
+              2015. O foco desse objetivo é construir infraestruturas resilientes,
+              promover a industrialização inclusiva e sustentável e fomentar a
+              inovação. No cenário atual, a ONU reconhece que a
+              infraestrutura deixou de ser apenas física (pontes e estradas) e
+              passou a ser fortemente <strong>Digital</strong>, dependendo da tecnologia para
+              conectar pessoas e democratizar a informação.
+              O Front-End atua como a <strong>ponte entre sistemas complexos e a sociedade</strong>. Ao priorizar
+              <strong> Usabilidade, Otimização e Acessibilidade</strong> o desenvolvedor garante que a inovação chegue a todos,
+              independentemente da qualidade da conexão de rede ou do dispositivo utilizado.
+            </p>
+            <blockquote class="ods-quote">
+              <svg class="quote-mark" viewBox="0 0 40 32" fill="currentColor" aria-hidden="true">
+                <path d="M0 32V20.5Q0 13 4 8T16 0l2 3Q12 5 9.5 9T7 20h9v12H0zm22 0V20.5Q22 13 26 8T38 0l2 3Q34 5 31.5 9T29 20h9v12H22z"/>
+              </svg>
+              <p>
+                Um exemplo claro da aplicação do ODS 9 por um Desenvolvedor
+                Front-End é o desenvolvimento de painéis de controle
+                (dashboards) e Progressive Web Apps (PWAs) para o setor
+                 industrial (como IoT - Internet das Coisas) ou para gestão de
+                 serviços públicos. Se uma indústria agrícola implementa sensores
+                 no campo, o desenvolvedor Front-End cria a interface responsiva
+                 para que os trabalhadores monitorem esses dados pelo celular.
+                 Ao criar um código otimizado, leve e que consiga operar até
+                 mesmo offline ou em redes de internet lentas (comuns em áreas
+                 remotas), o programador promove diretamente a inovação
+                 tecnológica e garante que essa infraestrutura digital seja resiliente
+                 e acessível para todos.
+              </p>
+            </blockquote>
+            <div class="ods-tags" aria-label="Conceitos chave do ODS 9 aplicados ao Front-End">
+              <span class="ods-tag">Progressive Web Apps</span>
+              <span class="ods-tag">IoT</span>
+              <span class="ods-tag">Offline-First</span>
+              <span class="ods-tag">Inclusão Digital</span>
+              <span class="ods-tag">Sustentabilidade</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       SEÇÃO 5 — FOOTER / CONTATO
+  ============================================================ -->
+  <footer class="footer" id="contato" aria-labelledby="footer-heading">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo footer-logo" aria-label="Voltar ao topo">
+            <span class="logo-bracket">&lt;</span><span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+            <span class="logo-text">CarreiraFE</span>
+          </a>
+          <p>Um guia completo sobre a carreira de Desenvolvedor Front-End no cenário digital atual.</p>
+          <p class="footer-author">Por <strong>Pedro Henrique Alves de Aguiar</strong></p>
+        </div>
+
+        <div class="footer-connect">
+          <h2 class="footer-heading" id="footer-heading">Vamos nos Conectar?</h2>
+          <p class="footer-cta-text">
+            Gostou do conteúdo? Conecte-se comigo e me ajude a melhorar avaliando este projeto!
+          </p>
+
+          <div class="social-links" role="list" aria-label="Links sociais e formulário de avaliação">
+
+            <a
+              href="https://github.com/PeterSanAlves"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-btn social-btn--github"
+              aria-label="Visitar perfil no GitHub de Pedro Henrique"
+              role="listitem"
+            >
+              <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/pedro-henrique-alves-de-aguiar-684545411"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-btn social-btn--linkedin"
+              aria-label="Visitar perfil no LinkedIn de Pedro Henrique"
+              role="listitem"
+            >
+              <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <a
+              href="https://forms.gle/JXqRt9mGrocGR2Lr7"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-btn social-btn--feedback"
+              aria-label="Avaliar o projeto via formulário Google Forms"
+              role="listitem"
+            >
+              <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+              </svg>
+              <span>Avaliar Projeto</span>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          Desenvolvido com <span class="heart" aria-label="amor">&#9829;</span> por
+          <strong>Pedro Henrique Alves de Aguiar</strong> &mdash; 2026
+        </p>
+        <p class="footer-copy">
+          Projeto Acadêmico &mdash; Gestão de Carreiras &mdash; Desenvolvedor Front-End
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
