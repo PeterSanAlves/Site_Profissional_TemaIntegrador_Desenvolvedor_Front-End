@@ -1,0 +1,1 @@
+Bom, Este projeto obviamente foi feito no primero periodo e necessitou de uma IA para criar o site (Creditos ao Bolt.new). porém o objetivo mesmo era analisar e pesquisar sobre a carreira de alguma profissão dentro da area de Ti, que no caso, escolhi o Desenvolvedor Front_End
